@@ -1,0 +1,85 @@
+<!-- <div class="robot-cell">
+  <dx-select-box
+#selectBox
+[dropDownOptions]="dropDownOptions"
+[showClearButton]="true"
+[items]="items"
+[searchEnabled]="true"
+>
+<div *dxTemplate="let data of 'dropDownButton'">
+  <i class="dx-icon fa fa-angle-down"></i>
+</div>
+</dx-select-box>
+</div> -->
+
+<h2 class="content-block">Home</h2>
+<div class="robot-cell">
+<!-- <form [formGroup]="empForm" (ngSubmit)="onSubmit()">
+  <div formArrayName="employees">
+    <div *ngFor="let employee of employees.controls; let empIndex=index">
+      <div
+        [formGroupName]="empIndex"
+        style="border: 1px solid blue; padding: 10px; width: 600px; margin: 5px;"
+      >
+        {{empIndex}} First Name :
+        <input type="text" formControlName="firstName" />
+        Last Name:
+        <input type="text" formControlName="lastName" />
+ 
+        <button (click)="removeEmployee(empIndex)">Remove</button>
+        <button type="button" (click)="openPopup(empIndex)">
+          profile skill
+        </button>
+        <dx-popup
+        [width]="'40%'"
+        [height]="'500'"
+        [showTitle]="true"
+        [title]="'add skill'"
+        [hideOnOutsideClick]="true"
+        [(visible)]="showEditPopUp"
+        >
+        <button type="button" (click)="addEmployeeSkill(empIndex)">
+          Add Skill2
+        </button>
+        <div>{{popupData.firstName}}</div>
+          <div formArrayName="skills">
+            <div
+              *ngFor="let skill of employeeSkills(empIndex).controls; let skillIndex=index"
+            >
+              <div [formGroupName]="skillIndex">
+                {{skillIndex}} Skill :
+                <input type="text" formControlName="skill" />
+                Exp:
+                <input type="text" formControlName="exp" />
+   
+                <button (click)="removeEmployeeSkill(empIndex,skillIndex)">
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+        </dx-popup>
+      </div>
+    </div>
+    <button type="button" (click)="addEmployee()">Add Employee</button>
+    <button type="button" (click)="onSubmit()">submit</button>
+  </div>
+</form>
+{{this.empForm.value | json}} -->
+
+
+
+<!-- <button  class="custom-margin" id="image"> click me</button> -->
+
+<dx-select-box
+        [searchEnabled]="true"
+        [dropDownOptions]="dropDownOptions"
+        [items]="test"
+        [inputAttr]="{ 'aria-label': 'Simple Product' }"
+        displayExpr="name"
+        valueExpr="id"
+></dx-select-box>
+</div>
+
+<h2 class="content-block">Home123456</h2>
+
