@@ -1,3 +1,20 @@
+
+.toast-wrapper {
+  position: fixed;
+  width: 400px;
+  height: auto;
+  min-height: 50px;
+  z-index: 2000;
+  top: 80px; //40px;
+  right: 20px;
+  padding: 10px;
+  margin-right: 50px;
+  color: white;
+  will-change: transform;
+}
+.button-right{
+  margin-right: 30px;
+}
 .robot-cell {
   display: table-cell;
   padding-right: 5px;

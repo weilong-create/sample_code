@@ -21,7 +21,7 @@ html, body {
 
 .container {
   height: 100%;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
 }
 
@@ -35,8 +35,8 @@ html, body {
 }
 
 .content-block {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
   margin-top: 20px;
 
   .screen-x-small & {

@@ -1,19 +1,15 @@
-<!-- <div class="robot-cell">
-  <dx-select-box
-#selectBox
-[dropDownOptions]="dropDownOptions"
-[showClearButton]="true"
-[items]="items"
-[searchEnabled]="true"
->
-<div *dxTemplate="let data of 'dropDownButton'">
-  <i class="dx-icon fa fa-angle-down"></i>
-</div>
-</dx-select-box>
-</div> -->
 
-<h2 class="content-block">Home</h2>
 <div class="robot-cell">
+  <!-- <button  class="custom-margin" id="image"> click me</button> -->
+  <div
+  class="d-flex justify-content-between toast-wrapper"
+>
+<dx-button  class="button-right"> click me</dx-button>
+<dx-button  class="button-right"> click me</dx-button>
+</div>
+  
+<app-profile></app-profile>
+</div>
 <!-- <form [formGroup]="empForm" (ngSubmit)="onSubmit()">
   <div formArrayName="employees">
     <div *ngFor="let employee of employees.controls; let empIndex=index">
@@ -64,22 +60,15 @@
     <button type="button" (click)="addEmployee()">Add Employee</button>
     <button type="button" (click)="onSubmit()">submit</button>
   </div>
-</form>
-{{this.empForm.value | json}} -->
-
-
-
-<!-- <button  class="custom-margin" id="image"> click me</button> -->
-
-<dx-select-box
+</form> -->
+<!-- {{this.empForm.value | json}} -->
+<!-- <dx-select-box
         [searchEnabled]="true"
         [dropDownOptions]="dropDownOptions"
         [items]="test"
         [inputAttr]="{ 'aria-label': 'Simple Product' }"
         displayExpr="name"
         valueExpr="id"
-></dx-select-box>
-</div>
+></dx-select-box> -->
 
-<h2 class="content-block">Home123456</h2>
 

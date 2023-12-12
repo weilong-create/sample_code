@@ -1,2 +1,46 @@
-<p>test works!</p>
-<h1>123</h1>
+<button type="button"  (click)="openPopup()">
+    click me
+  </button>
+<dx-popup
+[width]="'30%'"
+[height]="'300'"
+[showTitle]="true"
+[title]="'dropDownOptions'"
+[hideOnOutsideClick]="true"
+[(visible)]="showEditPopUp"
+>
+<dx-scroll-view>
+<dx-select-box
+        [searchEnabled]="true"
+        [dropDownOptions]="dropDownOptions"
+        [items]="test"
+        [width]="300"
+        class="select-box"
+        [inputAttr]="{ 'aria-label': 'Simple Product' }"
+        displayExpr="name"
+        valueExpr="id"
+></dx-select-box>
+<dx-select-box
+class="select-box"
+        [searchEnabled]="true"
+        [dropDownOptions]="dropDownOptions"
+        [items]="test"
+        [width]="300"
+        [inputAttr]="{ 'aria-label': 'Simple Product' }"
+        [dropDownOptions]="{ maxHeight: 200 }"
+        displayExpr="name"
+        valueExpr="id"
+></dx-select-box>
+<dx-select-box
+class="select-box"
+        [searchEnabled]="true"
+        [dropDownOptions]="dropDownOptions"
+        [items]="test"
+        [width]="300"
+        [inputAttr]="{ 'aria-label': 'Simple Product' }"
+        [dropDownOptions]="{ maxHeight: 200 }"
+        displayExpr="name"
+        valueExpr="id"
+></dx-select-box>
+</dx-scroll-view>
+</dx-popup>
